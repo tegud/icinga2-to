@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tegud/icinga2-to#readme",
   "dependencies": {
+    "jsonparse": "^1.2.0",
     "lodash": "^4.16.4",
     "logall": "0.0.3",
     "moment": "^2.15.2",
