@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "lint": "node_modules/.bin/eslint index.js lib/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,14 @@
     "url": "https://github.com/tegud/icinga2-to/issues"
   },
   "homepage": "https://github.com/tegud/icinga2-to#readme",
+  "devDependencies": {
+    "eslint": "^3.0.1"
+  },
   "dependencies": {
     "jsonparse": "^1.2.0",
     "lodash": "^4.16.4",
     "logall": "0.0.3",
+    "machina": "^2.0.0",
     "moment": "^2.15.2",
     "request": "^2.76.0",
     "rs-amqp-publisher": "^0.3.2",
